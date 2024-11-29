@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo and YouTube Video</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FF5722, #FF9800, #FFC107, #FFFFFF);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #333;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .header img {
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+        }
+        
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+            color: #FFFFFF;
+        }
+        
+        .video-container {
+            width: 90%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            margin-top: 20px;
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Responsive Adjustments */
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header img {
+                max-width: 100px;
+            }
+            .header h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo2.png" alt="Logo">
+        <h1>Alva's Education Foundation <br> Welcome's you to Virasat 2024 from 10th - 15th Dec</h1>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Nl58FbMGai8?si=n-79qx9_g9YalM9Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>
